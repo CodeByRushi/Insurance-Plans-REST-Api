@@ -1,0 +1,23 @@
+spring:
+  datasource:
+    driver-class-name: org.h2.Driver
+    password: rushi
+    url: jdbc:h2:mem:testdb
+    username: rushi
+  h2:
+    console:
+      enabled: true
+  jpa:
+    hibernate:
+      ddl-auto: update
+      
+plan-api:
+ messages:
+  planSavedSucc : Plan Saved
+  planSavedFail : Plan Not Saved
+  planUpdateSucc : Plan updated
+  planUpdateFail : Plan Not updated
+  planDeleteSucc : Plan deleted
+  planDeleteFail : Plan not deleted
+  planStatusChangeSucc : status Changed
+  planStatusChangeFail : status not Changed
